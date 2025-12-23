@@ -1,15 +1,14 @@
+
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Profil utilisateur</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body> 
      <header>
         <!--nav-->
         
@@ -47,51 +46,22 @@
   </div>
 </nav>
 
-</header>
 
-
-<section>
-    
-    <div>
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-
-                <div>
-                    <div>
-
-                        <!-- Message de bienvenue -->
-                        <h3 class="card-title text-center mt-4 mb-4 text-white">Bienvenue Utilisateur</h3>
-
-                        <!-- Informations utilisateur -->
-                        <ul class="list-group mb-4">
-                            <li class="list-group-item">
-                                <strong>Nom d utilisateur :</strong> ghizlane
-                            </li>
-                            <li class="list-group-item">
-                                <strong>Date d inscription :</strong> 10/12/2025
-                            </li>
-                            <li class="list-group-item">
-                                <strong>Heure de connexion :</strong> 09:45
-                            </li>
-                        </ul>
-
-                        <!-- Lien gestion contacts -->
-                        <div class="d-grid">
-                            <a href="contacts.html" class="btn btn-primary">
-                                Gérer mes contacts
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
-
+        <section class="text-center d-flex flex-column justify-content-center">
+            <div class="title">
+            <h1 class="display-1 fw-500 text-white mb-4">ConnectSys</h1>
             </div>
-        </div>
-    </div>
 
-</section>
-    <!-- Bootstrap JS -->
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.js"></script>
+            <div class="section-button">
+                <a href="login_html.php" class="rounded text-white border border-white p-2 bg-info">Ce Conntacter</a>
+                <a href="inscrire.php" class="rounded text-secondary border border-white p-2 m-2 bg-white">S'inscrire</a>
+            </div>
+        </section>
+    </header>
+
+    
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

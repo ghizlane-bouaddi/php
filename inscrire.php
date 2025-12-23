@@ -1,3 +1,7 @@
+
+<?php
+require 'connexion.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +13,7 @@
 </head>
 <body>
     <header>
-        <!--nav-->
+
         
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
@@ -53,34 +57,46 @@
             <div class="text-center pt-4 ">
             <h2 class="text-white">inscription</h2>
         </div>
-        <div class="input">
+        <form method="POST" action="auth.php" class="input">
              <div class="section_input">
             
-            <input type="text" placeholder="user Name" class="border border-white p-2 rounded mb-3">
-        </div>
-
-
-         <div class="section_input">
-           
-            <input type="text" placeholder="password"class="border border-white p-2 rounded mb-3">
-            
+            <input type="text" name="name" placeholder="user Name" class="border border-white p-2 rounded mb-3">
         </div>
 
         <div class="section_input">
+            
+            <input type="text" name="phone" placeholder="phone" class="border border-white p-2 rounded mb-3">
+        </div>
+
+
+        <div class="section_input">
+            
+            <input type="email" name="email" placeholder="email" class="border border-white p-2 rounded mb-3">
+        </div>
+
+        <div class="section_input">
+            
+            <input type="text" name="addrase" placeholder="addrease" class="border border-white p-2 rounded mb-3">
+        </div>
+
+         <div class="section_input">
            
-            <input type="text" placeholder="confirme Password"class="border border-white p-2 rounded mb-3">
+            <input type="password" name="password" placeholder="password"class="border border-white p-2 rounded mb-3">
             
         </div>
+
+       
        
         </div>
        
        <div class="section-button d-flex flex-column">
-                <a href="index.html" class="rounded text-white border border-white p-2 mb-3 mt-3 bg-info">inscription</a>
-                <a href="instcription.html"class="rounded text-Info border border-white p-2 bg-white">Se Conntacter</a>
-            </div>
-
-
+                  
+                <button type="submite"  class="btn btn-primary">inscription</button>
+                <button type="submite"  class="btn btn-primary">login</button>
         </div>
+
+
+</form>
 </section>
 
       

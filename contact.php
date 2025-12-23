@@ -49,13 +49,14 @@
  </header>
 
  <section>
+    <!--form-->
     <div class="container mt-5">
 
     <h2 class="text-center mb-4">Gestion des Contacts</h2>
 
     <div class="row">
 
-        <!-- ================== A. LISTE DES CONTACTS ================== -->
+       
         <div class="col-md-7">
             <div class="card shadow mb-4">
                 <div class="card-header bg-primary text-white">
@@ -63,12 +64,12 @@
                 </div>
                 <div class="card-body">
 
-                    <!-- Message si liste vide -->
+                    
                     <p id="emptyMessage" class="text-muted text-center">
                         Aucun contact enregistré.
                     </p>
 
-                    <!-- Tableau -->
+                   
                     <table class="table table-bordered table-hover d-none" id="contactsTable">
                         <thead class="table-light">
                             <tr>
@@ -80,7 +81,7 @@
                             </tr>
                         </thead>
                         <tbody id="contactsBody">
-                            <!-- Contacts dynamiques -->
+                           
                         </tbody>
                     </table>
 
@@ -88,7 +89,7 @@
             </div>
         </div>
 
-        <!-- ================== B. FORMULAIRE ================== -->
+       
         <div class="col-md-5">
             <div class="card shadow">
                 <div class="card-header bg-success text-white" id="formTitle">
@@ -100,33 +101,31 @@
 
                         <input type="hidden" id="editIndex">
 
-                        <!-- Nom -->
+                        
                         <div class="mb-3">
                             <label class="form-label">Nom *</label>
                             <input type="text" id="nom" class="form-control" required minlength="2">
                         </div>
 
-                        <!-- Téléphone -->
+                        
                         <div class="mb-3">
                             <label class="form-label">Téléphone</label>
-                            <input type="text" id="telephone" class="form-control"
-                                   pattern="[0-9+\-() ]*"
-                                   placeholder="+212 (6) 00-00-00-00">
+                            <input type="text" id="telephone" class="form-control">
                         </div>
 
-                        <!-- Email -->
+                        
                         <div class="mb-3">
-                            <label class="form-label">Email *</label>
+                            <label class="form-label">Email</label>
                             <input type="email" id="email" class="form-control" required>
                         </div>
 
-                        <!-- Adresse -->
+                        
                         <div class="mb-3">
                             <label class="form-label">Adresse</label>
                             <textarea id="adresse" class="form-control" maxlength="255"></textarea>
                         </div>
 
-                        <!-- Bouton -->
+                        
                         <div class="d-grid">
                             <button type="submit" class="btn btn-success" id="submitBtn">
                                 Ajouter

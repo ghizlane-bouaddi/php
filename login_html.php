@@ -1,14 +1,20 @@
+
+<?php 
+require 'login.php'
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contact</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <title>Conntacter</title>
 </head>
-<body> 
-     <header>
+<body>
+    
+
+  <header>
         <!--nav-->
         
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -45,22 +51,47 @@
   </div>
 </nav>
 
+ </header>
+<section>
+    <div class="d-flex flex-column align-content-center flex-wrap btn">
 
-        <section class="text-center d-flex flex-column justify-content-center">
-            <div class="title">
-            <h1 class="display-1 fw-500 text-white mb-4">ConnectSys</h1>
+            <div class="text-center pt-4 ">
+            <h2 class="text-white">Conction</h2>
+        </div>
+        <form method="POST" action="login.php">
+        <div class="input">
+             <div class="section_input">
+            
+            <input type="text" name="name" placeholder="user Name" class="border border-white p-2 rounded mb-3">
+        </div>
+
+         <div class="section_input">
+           
+            <input type="password" name="password" placeholder="password"class="border border-white p-2 rounded mb-3">
+            <div class="link-passowrd">
+                 <a href="#" class="text-white">Mot de passe oublie</a>
+            </div>
+        </div>
+       
+        </div>
+       
+       <div class="section-button d-flex flex-column">
+
+<button type="submit" name="Conntacter" class="rounded text-white border border-white p-2 mb-3 mt-3 bg-info">Conntacter</button>
+                <!-- <a href="Profil.php" class="rounded text-white border border-white p-2 mb-3 mt-3 bg-info">Se Conntacter</a> -->
+                <a href="inscrire.php"class="rounded text-Info border border-white p-2 bg-white">Creer un nouveau compte</a>
             </div>
 
-            <div class="section-button">
-                <a href="contact.html" class="rounded text-white border border-white p-2 bg-info">Ce Conntacter</a>
-                <a href="inscrire.html" class="rounded text-secondary border border-white p-2 m-2 bg-white">S'inscrire</a>
-            </div>
-        </section>
-    </header>
 
-    
+        </div>
+        </form>
+</section>
 
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.js"></script>
-    <script src="script.js"></script>
+      
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
